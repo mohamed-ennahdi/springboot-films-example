@@ -8,5 +8,3 @@ Spring boot project with 3 modules:
 
 All CRUD operations were implemented using microservices and Sakila DB
 (sample DB shipped with MySQL).
-
-- 
