@@ -11,7 +11,6 @@ import javax.persistence.ManyToOne;
 @Entity
 public class Film {
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name="film_id")
     private Long id;
 	
@@ -23,6 +22,17 @@ public class Film {
 	@ManyToOne
 	private Language language;
 	
+	public Film() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public Film(Long id, String title, String description, Language language) {
+		this.id = id;
+		this.title = title;
+		this.description = description;
+		this.language = language;
+	}
+
 	@Override
 	public String toString() {
 		return this.id + " " + this.title + " " + this.description;

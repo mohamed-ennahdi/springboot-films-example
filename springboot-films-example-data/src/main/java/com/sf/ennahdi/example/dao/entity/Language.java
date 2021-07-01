@@ -1,22 +1,26 @@
 package com.sf.ennahdi.example.dao.entity;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 @Entity
 public class Language {
 	@Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "language_id")
     private Long id;
 	
 	private String name;
 	
+	@Temporal(TemporalType.TIMESTAMP)
 	@Column(name = "last_update")
 	private Date lastUpdate;
 	
