@@ -41,8 +41,8 @@ import com.sf.ennahdi.example.web.app.FilmApp;
 
 @EnableAutoConfiguration
 @SpringBootTest(webEnvironment = WebEnvironment.RANDOM_PORT, classes = {FilmApp.class})
-@EnableJpaRepositories(basePackageClasses = {FilmRepository.class})
-@EntityScan(basePackages = "com.sf.ennahdi.example.dao.entity")
+//@EnableJpaRepositories(basePackageClasses = {FilmRepository.class})
+//@EntityScan(basePackages = "com.sf.ennahdi.example.dao.entity")
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 @TestMethodOrder(OrderAnnotation.class)
 public class FilmControllerTest {

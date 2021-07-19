@@ -2,11 +2,15 @@ package com.sf.ennahdi.example.web.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.ComponentScan;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@ComponentScan(basePackages="com.sf.ennahdi.example")
-@SpringBootApplication
+import com.sf.ennahdi.example.dao.repository.FilmRepository;
+
+@SpringBootApplication(scanBasePackages="com.sf.ennahdi.example")
+@EnableJpaRepositories(basePackageClasses = {FilmRepository.class})
+@EntityScan(basePackages = "com.sf.ennahdi.example.dao.entity")
 public class FilmApp {
 	
 	 private static ApplicationContext applicationContext;
