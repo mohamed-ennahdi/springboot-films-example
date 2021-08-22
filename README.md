@@ -23,7 +23,7 @@ To deploy the project in Docker:
 
 	- docker network create sakila_mysql
 
-	- docker run -d -it --network sakila_mysql -e MYSQL_USER=sakila -e MYSQL_ROOT_PASSWORD=p_ssW0rd -e MYSQL_DATABASE=sakila --name sakila_films sakiladb/mysql
+	- docker run -d -p 6033:3306 -it --network sakila_mysql -e MYSQL_USER=sakila -e MYSQL_ROOT_PASSWORD=p_ssW0rd -e MYSQL_DATABASE=sakila --name sakila_films sakiladb/mysql
 
 	- docker build -t springboot-films-example-web:0.0.1-SNAPSHOT .
 
