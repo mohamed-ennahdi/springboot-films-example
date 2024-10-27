@@ -7,10 +7,6 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-
-
-
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
@@ -22,6 +18,11 @@
 	<properties>
 		<java.version>11</java.version>
 	</properties>
+	 <scm>
+        <connection>scm:git:https://github.com/mohamed-ennahdi/springboot-films-example.git</connection>
+        <developerConnection>scm:git:https://github.com/mohamed-ennahdi/springboot-films-example.git</developerConnection>
+        <url>https://github.com/mohamed-ennahdi/springboot-films-example</url>
+    </scm>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -36,12 +37,7 @@
 	</dependencies>
 
 
-
-
-
-
-
-
+	
 
 
 	<modules>
@@ -49,6 +45,9 @@
 		<module>springboot-films-example-service</module>
 		<module>springboot-films-example-web</module>
 	</modules>
+
+
+	
 	
 	
 	 <distributionManagement>
