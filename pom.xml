@@ -49,4 +49,13 @@
 		<module>springboot-films-example-service</module>
 		<module>springboot-films-example-web</module>
 	</modules>
+	
+	
+	 <distributionManagement>
+    <repository>
+      <id>github</id>
+      <name>GitHub Packages</name>
+      <url>https://maven.pkg.github.com/mohamed-ennahdi/springboot-films-example</url>
+    </repository>
+  </distributionManagement>
 </project>
