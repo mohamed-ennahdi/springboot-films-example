@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.github.ennahdi.springboot-films-example</groupId>
 		<artifactId>springboot-films-example</artifactId>
-		<version>0.0.3-SNAPSHOT</version>
+		<version>0.0.3</version>
 	</parent>
 	<artifactId>springboot-films-example-data</artifactId>
 	<dependencies>
