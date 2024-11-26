@@ -3,7 +3,7 @@
 	<parent>
 		<groupId>com.github.ennahdi.springboot-films-example</groupId>
 		<artifactId>springboot-films-example</artifactId>
-		<version>0.0.9-SNAPSHOT</version>
+		<version>0.0.9</version>
 	</parent>
 	<artifactId>springboot-films-example-service</artifactId>
 	<properties>
@@ -13,7 +13,7 @@
 		<dependency>
 			<groupId>com.github.ennahdi.springboot-films-example</groupId>
 			<artifactId>springboot-films-example-data</artifactId>
-			<version>0.0.9-SNAPSHOT</version>
+			<version>0.0.9</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mapstruct/mapstruct -->
 		<dependency>
