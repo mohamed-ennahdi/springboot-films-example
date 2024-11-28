@@ -11,7 +11,7 @@ name: Java CI Pushed Tag
 on:
   create:
     tags:
-    - '*'
+    - '**'
 
 jobs:
   build:
