@@ -9,7 +9,7 @@
 name: Java CI Pushed Tag
 
 on:
-  push:
+  create:
     tags:
     - '*'
 
