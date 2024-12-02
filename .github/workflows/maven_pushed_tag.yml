@@ -9,9 +9,9 @@
 name: Java CI Pushed Tag
 
 on:
-  push:
+  create:
     tags:
-      - 'v*'
+      - '*'
 
 jobs:
   build:
