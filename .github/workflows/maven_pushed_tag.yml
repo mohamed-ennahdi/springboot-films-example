@@ -10,6 +10,8 @@ name: Java CI Pushed Tag
 
 on:
   push:
+    branches:
+      - '**'
     tags:
       - '**'
 
