@@ -35,7 +35,7 @@ jobs:
         mvn -B release:prepare -DpushChanges=false --file pom.xml
         mvn -B release:perform -DlocalCheckout=true -DdeployAtEnd=true --file pom.xml
         git push
-        git push --tags
+#        git push --tags
         
       env:
         GITHUB_TOKEN: ${{ secrets.ENNAHDI_TOKEN }}
