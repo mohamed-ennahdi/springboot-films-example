@@ -24,6 +24,7 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
+        token: ${{ secrets.ENNAHDI_TOKEN }}
 
     - name: Configure Git user
       run: |
