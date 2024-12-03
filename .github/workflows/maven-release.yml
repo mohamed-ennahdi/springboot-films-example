@@ -51,6 +51,6 @@ jobs:
     - name: Publish to Apache Maven Central
       run: mvn deploy
       env:
-        MAVEN_USERNAME: mohamed-ennnahdi
+        MAVEN_USERNAME: mohamed-ennahdi
         MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
       
