@@ -52,5 +52,5 @@ jobs:
       run: mvn deploy
       env:
         MAVEN_USERNAME: mohamed-ennahdi
-        MAVEN_CENTRAL_TOKEN: ${{ secrets.MAVEN_CENTRAL_TOKEN }}
+        MAVEN_CENTRAL_TOKEN: ${{ secrets.ENNAHDI_TOKEN }}
       
