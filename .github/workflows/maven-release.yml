@@ -24,7 +24,9 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
         cache: maven
-        token: ${{ secrets.ENNAHDI_TOKEN }}
+        server-id: 'github'
+        server-username: 'mohamed-ennahdi'  # env variable name for username of Artifactory server; value can be anything as it is a transient user
+        server-password: MY_TOKEN_REF
 
     - name: Configure Git user
       run: |
@@ -37,6 +39,7 @@ jobs:
         mvn -B release:perform -DlocalCheckout=true -DdeployAtEnd=true --file pom.xml
         git push
         git push --tags
-        
+        env:
+           MY_TOKEN_REF: ${{ secrets.ENNAHDI_TOKEN }}
 #      env:
 #        GITHUB_TOKEN: ${{ secrets.ENNAHDI_TOKEN }}
