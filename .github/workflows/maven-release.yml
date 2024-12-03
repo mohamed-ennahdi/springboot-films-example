@@ -25,6 +25,7 @@ jobs:
         distribution: 'temurin'
         cache: maven
         persist-credentials: false
+        token: ${{ secrets.ENNAHDI_TOKEN }}
 
     - name: Configure Git user
       run: |
